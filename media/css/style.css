@@ -21,10 +21,10 @@ header{
     display: flex;
     justify-content: center;
     column-gap:76px;
-    align-items:center;
-    
+    align-items:center;  
 }
 .header__option{
+    
     color: #FFF;
     text-align: center;
     font-size: 13px;
