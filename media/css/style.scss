@@ -16,28 +16,31 @@
     }
     
     &__wrapper {
-      padding-bottom: 42px;
       border-bottom: 1px solid #FFF;
       display: flex;
       justify-content: space-between;
-      align-items:center;
     }
   
     &__navigation {
       display: flex;
       justify-content: center;
-      column-gap: 76px;
       align-items: center;
     }
-  
-    &__option {
-      color: #FFF;
-      text-align: center;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 15.26px;
-      text-transform: uppercase;
-      text-decoration: none;
+
+ &__option { 
+    padding-bottom: 42px;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15.26px;
+    text-transform: uppercase;
+    width: 134px;
+    border-bottom:3px solid transparent;
+    text-decoration: none;
+      &:hover{
+        border-bottom:3px solid #BABBC5;
+      }
     }
     &__logo{
        width: 184px;
@@ -48,7 +51,16 @@
        }
     }
   }
-  
+  .scrolled-color {
+    color: #2C3154;
+    &:hover{
+      border-bottom:3px solid #2C3154;
+    }
+    
+  } 
+  .scrolled-line{
+    border-bottom: 1px solid #2C3154;
+  }
   .container {
     max-width: 1200px;
     padding: 0 15px;
@@ -188,74 +200,64 @@
   
   .team {
     padding-top: 114px;
+    &__content {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    &__member {
+        margin: 0 auto;
+        &-picture {
+            max-height: 270px;
+            max-width: 270px;
+            margin-bottom: 30px;
+        }
+        &-image {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        &-name {
+            color: #2D3033;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.18px;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+        &-position {
+            color: #FF4343;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.13px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        &-comments {
+            color: #6C7279;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.13px;
+            margin-bottom: 37px;
+        }
+        &-social {
+            display: flex;
+            flex-direction: flex-start;
+            column-gap: 6px;
+        }
+    }
+    &__social-logo {
+        height: 39px;
+        width: 39px;
+    }
+    &__social-image {
+        width: 100%;
+        height: 100%;
+    }
   }
   
-  .team__container {
-  }
   
-  .team__content {
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-  }
-  
-  .team__member {
-    margin: 0 auto;
-  }
-  
-  .team__member-picture {
-    max-height: 270px;
-    max-width: 270px;
-    margin-bottom: 30px;
-  }
-  
-  .team__member-image {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-  }
-  
-  .team__member-name {
-    color: #2D3033;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.18px;
-    text-transform: capitalize;
-    margin-bottom: 5px;
-  }
-  
-  .team__member-position {
-    color: #FF4343;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.13px;
-    text-transform: uppercase;
-    margin-bottom: 18px;
-  }
-  
-  .team__member-comments {
-    color: #6C7279;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.13px;
-    margin-bottom: 37px;
-  }
-  
-  .team__member-social {
-    display: flex;
-    flex-direction: flex-start;
-    column-gap: 6px;
-  }
-  
-  .team__social-logo {
-    height: 39px;
-    width: 39px;
-  }
-  
-  .team__social-image {
-    width: 100%;
-    height: 100%;
-  }
+
   
   @media only screen and (max-device-width: 1024px) {
     .container {
@@ -265,18 +267,17 @@
   
     .banner {
       padding: 257px 0px 126px 0px;
+      &__title {
+        font-size: 48px;
+        margin-bottom: 61px;
+        line-height: 56.35px;
+      }
+      &__info {
+        font-size: 18px;
+        line-height: 21.13px;
+      }
     }
   
-    .banner__title {
-      font-size: 48px;
-      margin-bottom: 61px;
-      line-height: 56.35px;
-    }
-  
-    .banner__info {
-      font-size: 18px;
-      line-height: 21.13px;
-    }
   
     .cta {
       max-width: 314px;
@@ -284,74 +285,68 @@
   
     .features {
       padding-top: 76px;
-    }
-  
-    .features__item {
-      margin: 0 auto;
-      text-align: center;
-  
-      &-logo {
-        width: 85px;
-        height: 85px;
+      &__item {
         margin: 0 auto;
-        margin-bottom: 44px;
+        text-align: center;
+    
+        &-logo {
+          width: 85px;
+          height: 85px;
+          margin: 0 auto;
+          margin-bottom: 44px;
+        }
+    
+        &-title {
+          font-size: 18px;
+          line-height: 21.13px;
+        }
+    
+        &-info {
+          font-size: 14px;
+          line-height: 16.44px;
+        }
       }
-  
-      &-title {
-        font-size: 18px;
-        line-height: 21.13px;
+      &__row {
+        column-gap: 20px;
+        &-top {
+            margin-bottom: 49px;
+          }
       }
-  
-      &-info {
-        font-size: 14px;
-        line-height: 16.44px;
+      &__content {
+        margin-bottom: 80px;
       }
     }
-  
-    .features__row {
-      column-gap: 20px;
-    }
-  
-    .features__row-top {
-      margin-bottom: 49px;
-    }
-  
-    .features__content {
-      margin-bottom: 80px;
-    }
+
   
     .example__picture {
       position: relative;
       z-index: -1;
     }
-  
-    .team__content {
-    }
-  
-    .team__member-name {
-      font-size: 18px;
-      line-height: 21.13px;
-    }
-  
-    .team__member-position {
-      font-size: 14px;
-      line-height: 16.44px;
-    }
-  
-    .team__member-comments {
-      font-size: 14px;
-      line-height: 16.44px;
+
+    .team__member{
+        &-name {
+            font-size: 18px;
+            line-height: 21.13px;
+        }
+        &-position {
+            font-size: 14px;
+            line-height: 16.44px;
+        }
+        &-comments {
+            font-size: 14px;
+            line-height: 16.44px;
+        }
+        &-picture {
+            width: 227px;
+            height: 227px;
+        }
     }
   
     .team__social-logo {
       width: 32px;
       height: 32px;
     }
-  
-    .team__member-picture {
-      width: 227px;
-      height: 227px;
-    }
+
   }
   
   @media only screen and (max-device-width: 950px) {
@@ -372,17 +367,15 @@
     .banner {
       padding: 106px 0px 52px 0px;
       /*height: 100vh;*/
-    }
-  
-    .banner__title {
-      font-size: 36px;
-      margin-bottom: 33px;
-      line-height: 42.26px;
-    }
-  
-    .banner__info {
-      font-size: 14px;
-      line-height: 16.44px;
+      &__title {
+        font-size: 36px;
+        margin-bottom: 33px;
+        line-height: 42.26px;
+      }
+      &__info {
+        font-size: 14px;
+        line-height: 16.44px;
+      }
     }
   
     .cta {
@@ -391,73 +384,67 @@
   
     .features {
       padding-top: 40px;
-    }
-  
-    .features__row {
-      flex-direction: column;
-      flex: 0 1 100%;
-      column-gap: 0px;
-    }
-  
-    .features__item {
-      max-width: 280px;
-      width: 100%;
-      margin-bottom: 40px;
-  
-      &:last-child {
-        margin-bottom: 0;
+      &__row {
+        flex-direction: column;
+        flex: 0 1 100%;
+        column-gap: 0px;
+      }
+      &__item {
+        max-width: 280px;
+        width: 100%;
+        margin-bottom: 40px;
+    
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &__content {
+        margin-bottom: 35px;
       }
     }
-  
-    .features__content {
-      margin-bottom: 35px;
-    }
-    .team__content {
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .team__member {
-      margin-bottom: 56px;
-      flex: 0 1 100%;
-  
-      &:last-child {
-        margin-bottom: 0px;
-      }
-    }
-  
-    .team__member-picture {
-     max-width: 100%;
-     width: 100%;
-     max-height: 227px;
 
-    }
-    .team__member-image{
-      object-fit: cover;
-    }
-  
-    .team__member-comments {
-      font-size: 14px;
-      line-height: 16.44px;
-    }
-  
-    .header__navigation {
-      display: none;
-    }
-  
-    .header__hamburger {
-      display: block;
-    }
-    .header__wrapper{
-       padding-bottom: 0;
-        border:none;
+    .team{
+        &__content {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__member {
+            margin-bottom: 56px;
+            flex: 0 1 100%;
+        
+            &:last-child {
+              margin-bottom: 0px;
+            }
+            &-picture {
+                max-width: 100%;
+                width: 100%;
+                max-height: 227px;
+           
+            }
+            &-image{
+                object-fit: cover;
+            }
+            &-comments {
+                font-size: 14px;
+                line-height: 16.44px;
+            }
+          }
     }
     .header{
         padding: 21px;
-    }
-    .header__logo{
-        width: 104px;
-        height: 15px;
+        &__navigation {
+            display: none;
+        }
+        &__hamburger {
+            display: block;
+        }
+        &__wrapper{
+            border:none;
+         }
+         &__logo{
+            width: 104px;
+            height: 15px;
+        }
     }
   
 }

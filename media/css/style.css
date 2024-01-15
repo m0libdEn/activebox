@@ -15,27 +15,29 @@
   display: none;
 }
 .header__wrapper {
-  padding-bottom: 42px;
   border-bottom: 1px solid #FFF;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .header__navigation {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 76px;
-       column-gap: 76px;
   align-items: center;
 }
 .header__option {
+  padding-bottom: 42px;
   color: #FFF;
   text-align: center;
   font-size: 13px;
   font-weight: 700;
   line-height: 15.26px;
   text-transform: uppercase;
+  width: 134px;
+  border-bottom: 3px solid transparent;
   text-decoration: none;
+}
+.header__option:hover {
+  border-bottom: 3px solid #BABBC5;
 }
 .header__logo {
   width: 184px;
@@ -44,6 +46,17 @@
 .header__logo__image {
   width: 100%;
   height: 100%;
+}
+
+.scrolled-color {
+  color: #2C3154;
+}
+.scrolled-color:hover {
+  border-bottom: 3px solid #2C3154;
+}
+
+.scrolled-line {
+  border-bottom: 1px solid #2C3154;
 }
 
 .container {
@@ -171,31 +184,26 @@
 .team {
   padding-top: 114px;
 }
-
 .team__content {
   display: flex;
   justify-content: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-
 .team__member {
   margin: 0 auto;
 }
-
 .team__member-picture {
   max-height: 270px;
   max-width: 270px;
   margin-bottom: 30px;
 }
-
 .team__member-image {
   width: 100%;
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }
-
 .team__member-name {
   color: #2D3033;
   font-size: 24px;
@@ -204,7 +212,6 @@
   text-transform: capitalize;
   margin-bottom: 5px;
 }
-
 .team__member-position {
   color: #FF4343;
   font-size: 18px;
@@ -213,7 +220,6 @@
   text-transform: uppercase;
   margin-bottom: 18px;
 }
-
 .team__member-comments {
   color: #6C7279;
   font-size: 18px;
@@ -221,19 +227,16 @@
   line-height: 21.13px;
   margin-bottom: 37px;
 }
-
 .team__member-social {
   display: flex;
   flex-direction: flex-start;
   -moz-column-gap: 6px;
        column-gap: 6px;
 }
-
 .team__social-logo {
   height: 39px;
   width: 39px;
 }
-
 .team__social-image {
   width: 100%;
   height: 100%;
@@ -306,13 +309,13 @@
     font-size: 14px;
     line-height: 16.44px;
   }
-  .team__social-logo {
-    width: 32px;
-    height: 32px;
-  }
   .team__member-picture {
     width: 227px;
     height: 227px;
+  }
+  .team__social-logo {
+    width: 32px;
+    height: 32px;
   }
 }
 @media only screen and (max-device-width: 950px) {
@@ -388,6 +391,9 @@
     font-size: 14px;
     line-height: 16.44px;
   }
+  .header {
+    padding: 21px;
+  }
   .header__navigation {
     display: none;
   }
@@ -395,11 +401,7 @@
     display: block;
   }
   .header__wrapper {
-    padding-bottom: 0;
     border: none;
-  }
-  .header {
-    padding: 21px;
   }
   .header__logo {
     width: 104px;
