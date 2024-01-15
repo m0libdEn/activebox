@@ -11,11 +11,11 @@
     <title>Active box</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <a class="header__logo" href="#banner">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="184" height="27" viewBox="0 0 184 27" fill="none">
+                    <svg class="header__logo-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 27" fill="none">
                         <path d="M16.0136 21.0865H7.81939L6.38839 25.7644H0L9.09706 0.723712H14.7188L23.884 25.7644H17.4616L16.0136 21.0865ZM9.25038 16.4257H14.5826L11.908 7.74061L9.25038 16.4257Z" fill="#656980"/>
                         <path d="M45.4001 17.2856C45.3206 19.0284 44.855 20.5705 44.0032 21.912C43.1514 23.242 41.9532 24.2739 40.4087 25.0077C38.8755 25.7415 37.1208 26.1084 35.1446 26.1084C31.8851 26.1084 29.3184 25.0363 27.4445 22.8923C25.5706 20.7482 24.6336 17.7213 24.6336 13.8116V12.5733C24.6336 10.1197 25.0538 7.97565 25.8943 6.14117C26.746 4.29522 27.9669 2.8735 29.5569 1.876C31.1469 0.867031 32.9868 0.362549 35.0765 0.362549C38.0861 0.362549 40.5052 1.16513 42.3337 2.77031C44.1622 4.36401 45.2014 6.56539 45.4512 9.37444H39.4887C39.4433 7.84953 39.0629 6.75457 38.3474 6.08957C37.6319 5.42457 36.5416 5.09207 35.0765 5.09207C33.5887 5.09207 32.4984 5.65388 31.8056 6.7775C31.1129 7.90112 30.7494 9.69548 30.7154 12.1606V13.932C30.7154 16.6034 31.0447 18.5125 31.7034 19.659C32.3735 20.8056 33.5206 21.3788 35.1446 21.3788C36.5189 21.3788 37.5694 21.0521 38.2962 20.3985C39.0231 19.745 39.4092 18.7074 39.4547 17.2856H45.4001Z" fill="#656980"/>
                         <path d="M67.1888 5.38444H59.7442V25.7644H53.7647V5.38444H46.4563V0.723712H67.1888V5.38444Z" fill="#656980"/>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="features__item">
                             <div class="features__item-logo">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
                                     <path d="M66.4917 67.2832C66.1469 67.2871 65.8066 67.2055 65.5011 67.0455C65.1957 66.8855 64.9348 66.6522 64.7417 66.3665C64.5878 66.135 64.4818 65.8751 64.4299 65.602C64.3779 65.3289 64.3812 65.0482 64.4394 64.7764C64.4977 64.5046 64.6097 64.2472 64.769 64.0194C64.9282 63.7916 65.1315 63.5979 65.3667 63.4498C70.7266 60.0024 74.826 54.9119 77.0513 48.9402C79.2767 42.9686 79.5084 36.4368 77.7118 30.3224C75.9152 24.2081 72.1869 18.8399 67.0848 15.0213C61.9827 11.2027 55.7812 9.13894 49.4084 9.13894C43.0355 9.13894 36.834 11.2027 31.7319 15.0213C26.6298 18.8399 22.9015 24.2081 21.1049 30.3224C19.3083 36.4368 19.54 42.9686 21.7654 48.9402C23.9908 54.9119 28.0902 60.0024 33.45 63.4498C33.6957 63.59 33.9103 63.7787 34.0807 64.0045C34.2511 64.2303 34.3737 64.4884 34.4411 64.7632C34.5085 65.0379 34.5192 65.3235 34.4727 65.6025C34.4261 65.8815 34.3232 66.1481 34.1702 66.386C34.0173 66.624 33.8174 66.8283 33.583 66.9865C33.3485 67.1447 33.0842 67.2535 32.8063 67.3062C32.5284 67.359 32.2426 67.3546 31.9665 67.2933C31.6903 67.2321 31.4296 67.1152 31.2 66.9498C25.0822 63.0161 20.4029 57.2069 17.8623 50.3916C15.3217 43.5764 15.0566 36.1217 17.1066 29.1431C19.1566 22.1646 23.4114 16.0377 29.2343 11.6792C35.0572 7.32081 42.135 4.96533 49.4084 4.96533C56.6818 4.96533 63.7596 7.32081 69.5825 11.6792C75.4054 16.0377 79.6602 22.1646 81.7102 29.1431C83.7602 36.1217 83.495 43.5764 80.9545 50.3916C78.4139 57.2069 73.7345 63.0161 67.6167 66.9498C67.2846 67.1733 66.892 67.2897 66.4917 67.2832Z" fill="#FF4343"/>
                                     <path d="M66.4917 83.7417H32.325C31.7758 83.731 31.2521 83.5081 30.8637 83.1197C30.4753 82.7313 30.2524 82.2076 30.2417 81.6584V65.2C30.2524 64.6508 30.4753 64.1271 30.8637 63.7387C31.2521 63.3503 31.7758 63.1274 32.325 63.1167C32.8776 63.1167 33.4075 63.3362 33.7982 63.7269C34.1889 64.1176 34.4084 64.6475 34.4084 65.2V79.575H64.4084V65.2C64.4084 64.6475 64.6279 64.1176 65.0186 63.7269C65.4093 63.3362 65.9392 63.1167 66.4917 63.1167C67.0409 63.1274 67.5646 63.3503 67.953 63.7387C68.3414 64.1271 68.5644 64.6508 68.575 65.2V81.6584C68.5644 82.2076 68.3414 82.7313 67.953 83.1197C67.5646 83.5081 67.0409 83.731 66.4917 83.7417Z" fill="#FF4343"/>
                                     <path d="M38.4918 93.9084C37.9392 93.9084 37.4093 93.6889 37.0186 93.2982C36.6279 92.9075 36.4084 92.3776 36.4084 91.8251V84.4918C36.4191 83.9426 36.642 83.4189 37.0304 83.0304C37.4189 82.642 37.9426 82.4191 38.4918 82.4084C39.0443 82.4084 39.5742 82.6279 39.9649 83.0186C40.3556 83.4093 40.5751 83.9392 40.5751 84.4918V91.8251C40.5751 92.3776 40.3556 92.9075 39.9649 93.2982C39.5742 93.6889 39.0443 93.9084 38.4918 93.9084Z" fill="#FF4343"/>
@@ -131,34 +131,34 @@
                 </div>
             </div>
         </div>
-        <div class="exmaples" id="works">
+        <div class="examples" id="works">
             <div class="examples__content">
-                <div class="exmaples__row exmaples__top">
-                    <div class="exmple__picture">
-                        <img src="media/img/examples/work_1.png" alt="work1" class="exmple__image">
+                <div class="examples__row exmaples__top">
+                    <div class="examples__picture">
+                        <img src="media/img/examples/work_1.png" alt="work1" class="examples__image">
                     </div>
-                    <div class="exmple__picture">
-                        <img src="media/img/examples/work_2.png" alt="work2" class="exmple__image">
+                    <div class="examples__picture">
+                        <img src="media/img/examples/work_2.png" alt="work2" class="examples__image">
                     </div>
-                    <div class="exmple__picture">
-                        <img src="media/img/examples/work_3.png" alt="work3" class="exmple__image">
+                    <div class="examples__picture">
+                        <img src="media/img/examples/work_3.png" alt="work3" class="examples__image">
                     </div>
-                    <div class="exmple__picture">
-                        <img src="media/img/examples/work_4.png" alt="work4" class="exmple__image">
+                    <div class="examples__picture">
+                        <img src="media/img/examples/work_4.png" alt="work4" class="examples__image">
                     </div>
                 </div>
-                <div class="exmaples__row">
-                    <div class="exmple__picture">
-                        <img src="media/img/examples/work_5.png" alt="work5" class="exmple__image">
+                <div class="examples__row exmaples__bottom">
+                    <div class="examples__picture">
+                        <img src="media/img/examples/work_5.png" alt="work5" class="examples__image">
                     </div>
-                    <div class="exmple__picture">
-                        <img src="media/img/examples/work_6.png" alt="work6" class="exmple__image">
+                    <div class="examples__picture">
+                        <img src="media/img/examples/work_6.png" alt="work6" class="examples__image">
                     </div>
-                    <div class="exmple__picture">
-                        <img src="media/img/examples/work_7.png" alt="work7" class="exmple__image">
+                    <div class="examples__picture">
+                        <img src="media/img/examples/work_7.png" alt="work7" class="examples__image">
                     </div>
-                    <div class="exmple__picture">
-                        <img src="media/img/examples/work_8.png" alt="work8" class="exmple__image">
+                    <div class="examples__picture">
+                        <img src="media/img/examples/work_8.png" alt="work8" class="examples__image">
                     </div>
                 </div>
             </div>
