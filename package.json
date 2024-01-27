@@ -1,0 +1,28 @@
+{
+  "name": "activebox",
+  "version": "1.0.0",
+  "description": "Active Box Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m0libdEn/activebox.git"
+  },
+  "author": "Danila m0libdEn Rogozhnikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m0libdEn/activebox/issues"
+  },
+  "homepage": "https://github.com/m0libdEn/activebox#readme",
+  "dependencies": {
+    "parcel": "^2.11.0",
+    "sass": "^1.69.7"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0"
+  }
+}
